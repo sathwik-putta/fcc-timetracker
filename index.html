@@ -1,1 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="2; url=https://script.google.com/macros/s/AKfycbxT_KVO_2LmAIleW3XH9YOYxM3Qdh8ZmataREZH0bgWefbUnYAAyYfuHaWjMEGXy4Sk/exec">
+  <title>Founders Counsel — Time Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0E0B42;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    .logo-wrap {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: rgba(196,145,42,0.1);
+      border: 1.5px solid rgba(196,145,42,0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    .logo-wrap svg {
+      width: 44px;
+      height: 44px;
+      fill: #C4912A;
+    }
+
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(196,145,42,0.3); }
+      50%       { box-shadow: 0 0 0 16px rgba(196,145,42,0); }
+    }
+
+    .brand {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+
+    .tagline {
+      font-size: 0.68rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #C4912A;
+      text-align: center;
+      margin-top: -18px;
+    }
+
+    .loading-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: rgba(255,255,255,0.45);
+      font-size: 0.82rem;
+    }
+
+    .dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: #C4912A;
+      animation: blink 1.2s ease-in-out infinite;
+    }
+    .dot:nth-child(2) { animation-delay: 0.2s; }
+    .dot:nth-child(3) { animation-delay: 0.4s; }
+
+    @keyframes blink {
+      0%, 100% { opacity: 0.2; transform: scale(1); }
+      50%       { opacity: 1;   transform: scale(1.3); }
+    }
+
+    .manual-link {
+      margin-top: 8px;
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.3);
+      text-align: center;
+    }
+    .manual-link a {
+      color: rgba(196,145,42,0.7);
+      text-decoration: none;
+    }
+    .manual-link a:hover { color: #C4912A; }
+  </style>
+</head>
+<body>
+
+  <div class="logo-wrap">
+    <!-- FC monogram -->
+    <svg viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+      <text x="4" y="34" font-family="serif" font-size="28" font-weight="700" fill="#C4912A">FC</text>
+    </svg>
+  </div>
+
+  <div>
+    <div class="brand">Founders Counsel &amp; Co</div>
+    <div class="tagline">Time Tracker</div>
+  </div>
+
+  <div class="loading-row">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <span>Launching app&hellip;</span>
+  </div>
+
+  <p class="manual-link">
+    Not redirecting?
+    <a href="https://script.google.com/macros/s/AKfycbxT_KVO_2LmAIleW3XH9YOYxM3Qdh8ZmataREZH0bgWefbUnYAAyYfuHaWjMEGXy4Sk/exec">
+      Click here
+    </a>
+  </p>
+
+  <script>
+    // Immediate JS redirect (faster than meta refresh)
+    setTimeout(function() {
+      window.location.replace(
+        'https://script.google.com/macros/s/AKfycbxT_KVO_2LmAIleW3XH9YOYxM3Qdh8ZmataREZH0bgWefbUnYAAyYfuHaWjMEGXy4Sk/exec'
+      );
+    }, 1500);
+  </script>
+
+</body>
+</html>
